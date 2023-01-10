@@ -66,7 +66,7 @@ img {
     border: 5px solid var(--rose);
 }
 
-img:hover {
+#image-section img:hover {
     opacity: 0.5;
 }
 
