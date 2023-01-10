@@ -19,7 +19,8 @@ https://lavanat.github.io/professional-portfolio/
 ## Screenshots
 
 Deployed Website:
-- ![Portfolio Screenshot](assets/Portfolio-Screenshot.png)
+
+![Portfolio Screenshot](Assets/Portfolio-Screenshot.png)
 
 ## License
 
