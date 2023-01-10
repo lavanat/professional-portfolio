@@ -28,8 +28,10 @@
   </header>
 
   <main>
-    <section>
+    <section class="section-container">
       <h2 id="About-Me">About Me</h2>
+      <section class="content-container">
+      <img src="./Assets/Lavanya-picture.jpg" alt="picture of Lavanya Natchiappan">
       <p> Hello! My name is Lavanya (pronounced Lava-nya) and 
         I am a customer success manager learning to code. 
         I have previously worked with large hospital systems in the EMR space 
@@ -40,40 +42,44 @@
          Feel free to check out some of my work below
          and contact me if you have any questions! 
       </p>
+      </section>
     </section>
 
-    <section>
+    <!-- each image had to be in its own container so that the title could be positioned relative to the image. 
+      The group of images also had to be in its own container -->
+      
+    <section class="section-container">
       <h2 id="Work">Work</h2>
-      <section class="image-section">
-      <p class="work-images">
+      <section id="image-section">
+      <p class="img-container">
         <a href="https://lavanat.github.io/prework-study-guide/">
           <img id="bigger-img" src="./Assets/Studying-picture.jpeg" alt="Desk with studying materials"/>
         <span class="img-title">Bootcamp Prework Study Guide</span>
         </a>
       </p>
 
-      <p class="work-images">
+      <p class="img-container">
         <a href="https://lavanat.github.io/Horiseon-Code-Refactor/">
           <img src= "./Assets/office-setup.webp" alt="home office set-up"/>
           <span class="img-title">Webpage Code Refactor</span>
         </a>
       </p>
 
-      <p class="work-images">
+      <p class="img-container">
         <a href="https://plainandfancygirl.files.wordpress.com/2017/01/underconstruction.jpg">
           <img src="./Assets/under-construction.jpeg" alt="plain and fancy under construction with women working sign" />
           <span class="img-title">Placeholder</span>
         </a>
       </p>
 
-      <p class="work-images">
+      <p class="img-container">
         <a href="https://freedomnutritioncoach.com/wp-content/uploads/2020/02/not-ready.jpg">
           <img src="./Assets/not-ready.jpg" alt="Garfield saying he's not ready yet" />
           <span class="img-title">Placeholder</span>
         </a>
       </p>
 
-      <p class="work-images">
+      <p class="img-container">
         <a href="https://static.vecteezy.com/system/resources/previews/004/243/615/original/creative-coming-soon-teaser-background-free-vector.jpg">
           <img src="./Assets/coming-soon.webp" alt="Coming soon sign" />
           <span class="img-title">Placeholder</span>
@@ -82,9 +88,9 @@
       </section>
     </section>
 
-    <section>
+    <section class="section-container">
       <h2 id="Contact-Me">Contact Me</h2>
-      <ul>
+      <ul class="list-container">
         <li>
           <a href="mailto:lavee.natch@gmail.com">Email</a>
         </li>

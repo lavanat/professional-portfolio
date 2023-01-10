@@ -8,61 +8,60 @@
 
 * {
     border-radius: 4px;
+    color: var(--plum);
 }
 
 body {
     background-color: var(--pink);
 }
 
+/* Header and Nav styles */
 header {
+    display:flex;
     padding: 10px;
     background-color: var(--rose);
+    justify-content: space-between;
 }
 
-header h1 {
-    display: inline-block;
+h1 {
     font-size: 48px;
     background-color: var(--pink);
     color: var(--rose);
 }
 
-header nav {
+nav {
     padding-top: 15px;
-    margin-right; 20px;
-    float: right;
+    margin-right: 20px;
     font-size: 32px;
 }
 
+/* List Styles */
 ul {
     list-style-type:none;
+    display:flex;
 }
 
 ul li {
-    display: inline-block;
+    display: flex;
     margin-left: 25px;
 }
 
-a {
-    color: var(--plum);
-}
+/* format the section headers */
 
-p {
-    color:var(--plum);
-}
-
-section {
-
-}
-section h2 {
-    display: inline-block;
-    padding-right: 20px;
+h2 {
+    display: flex;
+    padding-right: 30px;
     color: var(--plum);
     font-size: 32px;
+    width: 20%;
+    border-right: 5px solid var(--rose);
+    margin: 10px;
 }
 
-.image-section img {
-    height: 300px;
-    width: 300px;
+/* format the images in the work section */
+img {
+    height: 200px;
+    width: 200px;
     margin: 5px;
     border: 5px solid var(--rose);
 }
@@ -72,11 +71,18 @@ img:hover {
 }
 
 #bigger-img {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
 }
 
-.work-images {
+/* Format each section to correct the layout */
+#image-section {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.img-container {
     position: relative;
 }
 
@@ -87,5 +93,43 @@ img:hover {
    background-color: var(--rose);
    padding: 10px;
    font-weight: 700;
+}
+
+.section-container {
+    display:flex;
+    padding: 10px;
+}
+
+.content-container {
+    display:flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.content-container p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.list-container {
+    display: flex;
+    font-size: 22px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+/* Adjust the layout when the screen size is smaller than 700px */
+@media screen and (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;    
+    }
+
+    header {
+        display: flex;
+        width:100%;
+        flex-wrap: wrap;
+    }
 }
 
