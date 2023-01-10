@@ -1,8 +1,4 @@
 :root {
-    --light-grey: #e0ebeb;
-    --grey-green: #a7bcb9;
-    --dark-blue: #24527a;
-    --teal-blue: #5dacbd;
     --plum: #744253;
     --brown: #b49286;
     --sand: #d7bea8;
@@ -10,20 +6,24 @@
     --rose: #c78283;
 }
 
+* {
+    border-radius: 4px;
+}
+
 body {
-    background-color: var(--sand);
+    background-color: var(--pink);
 }
 
 header {
     padding: 10px;
-    background-color: var(--dark-blue);
+    background-color: var(--rose);
 }
 
 header h1 {
     display: inline-block;
     font-size: 48px;
-    background-color: var(--teal-blue);
-    color: var(--dark-blue);
+    background-color: var(--pink);
+    color: var(--rose);
 }
 
 header nav {
@@ -42,21 +42,50 @@ ul li {
     margin-left: 25px;
 }
 
-header nav ul li a {
-    color: var(--teal-blue);
+a {
+    color: var(--plum);
 }
 
 p {
-    color:var(--dark-blue);
+    color:var(--plum);
 }
 
+section {
+
+}
 section h2 {
-    color: var(--dark-blue);
+    display: inline-block;
+    padding-right: 20px;
+    color: var(--plum);
     font-size: 32px;
 }
 
-section img {
-    max-height: 200px;
-    padding:20px;
+.image-section img {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    border: 5px solid var(--rose);
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+#bigger-img {
+    height: 500px;
+    width: 500px;
+}
+
+.work-images {
+    position: relative;
+}
+
+.img-title {
+   position: absolute;
+   bottom: 30px;
+   left: 16px;
+   background-color: var(--rose);
+   padding: 10px;
+   font-weight: 700;
 }
 
